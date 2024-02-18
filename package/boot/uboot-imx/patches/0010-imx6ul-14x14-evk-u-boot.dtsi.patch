@@ -1,0 +1,16 @@
+--- a/arch/arm/dts/imx6ul-14x14-evk-u-boot.dtsi
++++ b/arch/arm/dts/imx6ul-14x14-evk-u-boot.dtsi
+@@ -5,13 +5,6 @@
+ 
+ &{/aliases} {
+ 	u-boot,dm-pre-reloc;
+-	display0 = &lcdif;
+-
+-	spi0 = &qspi;
+-	spi1 = &ecspi1;
+-	spi2 = &ecspi2;
+-	spi3 = &ecspi3;
+-	spi4 = &ecspi4;
+ };
+ 
+ &soc {

@@ -1,0 +1,22 @@
+--- a/include/configs/mx6ullevk.h
++++ b/include/configs/mx6ullevk.h
+@@ -50,7 +50,7 @@
+ 	"initrd_high=0xffffffff\0" \
+ 	"emmc_dev=1\0"\
+ 	"emmc_ack=1\0"\
+-	"sd_dev=1\0" \
++	"sd_dev=0\0" \
+ 	"mtdparts=" MFG_NAND_PARTITION \
+ 	"\0"\
+ 
+@@ -94,8 +94,8 @@
+ 	"ip_dyn=yes\0" \
+ 	"splashimage=0x8c000000\0" \
+ 	"mmcdev="__stringify(CONFIG_SYS_MMC_ENV_DEV)"\0" \
+-	"mmcpart=1\0" \
+-	"mmcroot=/dev/mmcblk1p2 rootwait rw\0" \
++	"mmcpart=0\0" \
++	"mmcroot=/dev/mmcblk0p2 rootwait rw\0" \
+ 	"mmcautodetect=yes\0" \
+ 	"mmcargs=setenv bootargs console=${console},${baudrate} " \
+ 		BOOTARGS_CMA_SIZE \
