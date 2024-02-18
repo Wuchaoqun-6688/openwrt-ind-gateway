@@ -6,7 +6,7 @@ PKG_NAME:=mwifiex
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/nxp-imx/mwifiex.git
 PKG_SOURCE_VERSION:=lf-6.1.55_2.2.0
-PKG_MIRROR_HASH:=744dcdb34f12bf38a018ec6049f3f3c1b9024a932613b6d4c3b299f88bfb92ed
+PKG_MIRROR_HASH:=dc73c21f6cf77a3d05b88374bc5a83ac014cf60de8e278255ecfcf94bda096d5
 PKG_LICENSE:=GPL-2.0
 
 include $(INCLUDE_DIR)/package.mk
