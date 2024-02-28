@@ -35,7 +35,7 @@ define KernelPackage/moal
   SECTION:=kernel
   TITLE:=NXP WIFI MOAL DRIVER
   HIDDEN:=1
-  DEPENDS:=+kmod-mlan
+  DEPENDS:= +kmod-cfg80211 +kmod-mlan
   FILES:= $(PKG_BUILD_DIR)/mxm_wifiex/wlan_src/moal.ko
 endef
 
